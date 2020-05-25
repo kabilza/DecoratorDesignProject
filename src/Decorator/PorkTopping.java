@@ -11,6 +11,11 @@ public class PorkTopping extends FoodToppingDecorator {
 
     @Override
     public String getFood() {
-        return super.getFood() + "Topping: Pork\n";
+        return super.getFood() + "\nTopping: Pork";
+    }
+
+    @Override
+    public double getPrice() {
+        return super.getPrice() + 20;
     }
 }

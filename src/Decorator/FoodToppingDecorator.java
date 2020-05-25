@@ -13,4 +13,9 @@ public abstract class FoodToppingDecorator implements Food {
     public String getFood() {
         return food.getFood();
     }
+
+    @Override
+    public double getPrice() {
+        return food.getPrice();
+    }
 }

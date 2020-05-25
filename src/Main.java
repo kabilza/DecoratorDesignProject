@@ -12,13 +12,16 @@ public class Main {
 
         Food beef = new BeefTopping(pork);
 
-        System.out.println("Rice without any topping");
+        System.out.println("\nRice without any topping");
         System.out.println(rice.getFood());
+        System.out.println("Total price: " + rice.getPrice());
 
-        System.out.println("Rice with Pork");
+        System.out.println("\nRice with Pork");
         System.out.println(pork.getFood());
+        System.out.println("Total price: " + pork.getPrice());
 
-        System.out.println("Rice with Beef and Pork");
+        System.out.println("\nRice with Beef and Pork");
         System.out.println(beef.getFood());
+        System.out.println("Total price: " + beef.getPrice());
     }
 }
