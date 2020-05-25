@@ -1,7 +1,12 @@
+package Decorator;
+
+import Concrete.Food;
+import Decorator.FoodToppingDecorator;
+
 public class PorkTopping extends FoodToppingDecorator {
 
-    public PorkTopping(Food decoratedTopping) {
-        super(decoratedTopping);
+    public PorkTopping(Food food) {
+        super(food);
     }
 
     @Override
