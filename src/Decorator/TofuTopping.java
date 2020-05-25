@@ -13,4 +13,9 @@ public class TofuTopping extends FoodToppingDecorator {
     public String getFood() {
         return super.getFood() + "Topping: Tofu\n";
     }
+
+    @Override
+    public double getPrice() {
+        return super.getPrice() + 25;
+    }
 }
