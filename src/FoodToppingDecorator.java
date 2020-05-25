@@ -1,17 +1,12 @@
-public class FoodToppingDecorator extends Food {
-//    public abstract String getDescription ();
+public abstract class FoodToppingDecorator implements Food {
+    protected Food decoratedTopping;
 
-    public FoodToppingDecorator(Type decoratedType) {
-        super(decoratedType);
+    public FoodToppingDecorator(Food decoratedTopping) {
+        this.decoratedTopping = decoratedTopping;
     }
 
     @Override
-    public void getType() {
-        decoratedType.getType();
-        getTopping();
-    }
-
-    private void getTopping() {
-        System.out.println("Topping: Pork");
+    public String getFood() {
+        return decoratedTopping.getFood();
     }
 }

@@ -1,6 +1,6 @@
-public class Noodle implements Type {
+public class Noodle implements Food {
     @Override
-    public void getType() {
-        System.out.println("Type: Noodle");
+    public String getFood() {
+        return "Food: Noodle\n";
     }
 }
