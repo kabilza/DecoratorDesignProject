@@ -1,3 +1,5 @@
+import Concrete.Food;
+
 public abstract class FoodToppingDecorator implements Food {
     protected Food decoratedTopping;
 

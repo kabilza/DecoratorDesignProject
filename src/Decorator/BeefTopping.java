@@ -1,3 +1,5 @@
+import Concrete.Food;
+
 public class BeefTopping extends FoodToppingDecorator {
 
     public BeefTopping(Food decoratedTopping) {
