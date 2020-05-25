@@ -1,3 +1,12 @@
-public abstract class FoodToppingDecorator extends Food {
-    public abstract String getDescription ();
+public abstract class FoodToppingDecorator implements Food {
+    protected Food decoratedTopping;
+
+    public FoodToppingDecorator(Food decoratedTopping) {
+        this.decoratedTopping = decoratedTopping;
+    }
+
+    @Override
+    public String getFood() {
+        return decoratedTopping.getFood();
+    }
 }
