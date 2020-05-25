@@ -10,6 +10,11 @@ public class BeefTopping extends FoodToppingDecorator {
 
     @Override
     public String getFood() {
-        return super.getFood() + "Topping: Beef\n";
+        return super.getFood() + "\nTopping: Beef";
+    }
+
+    @Override
+    public double getPrice() {
+        return super.getPrice() + 30;
     }
 }
