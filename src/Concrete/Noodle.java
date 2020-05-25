@@ -2,9 +2,9 @@ package Concrete;
 
 import Concrete.Food;
 
-public class Rice implements Food {
+public class Noodle implements Food {
     @Override
     public String getFood() {
-        return "Food: Rice\n";
+        return "Food: Noodle\n";
     }
 }

@@ -1,14 +1,16 @@
+package Decorator;
+
 import Concrete.Food;
 
 public abstract class FoodToppingDecorator implements Food {
-    protected Food decoratedTopping;
+    protected Food food;
 
-    public FoodToppingDecorator(Food decoratedTopping) {
-        this.decoratedTopping = decoratedTopping;
+    public FoodToppingDecorator(Food food) {
+        this.food = food;
     }
 
     @Override
     public String getFood() {
-        return decoratedTopping.getFood();
+        return food.getFood();
     }
 }
